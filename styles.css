@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: mm ease 8;
+}
+
+body {
+  background: #2A7B9B;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 20%, rgba(87, 199, 133, 1) 40%, rgba(237, 221, 83, 1) 100%);
+  /*https://cssgradient.io/*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.search-bar button {
+  background: #6366f1;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar button img {
+  width: 20px;
+  height: 20px;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.temp {
+  font-size: 3rem;
+  color: #1e40af;
+}
+
+.city {
+  font-size: 1.5rem;
+  color: #374151;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.details div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.details img {
+  width: 30px;
+  height: 30px;
+}
+
+.humidity-value, .wind-value {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2563eb;
+}
+@keyframes mm {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+

@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Weather</title>
+</head>
+<body>
+  <div class="card">
+    <div class="search-bar">
+      <input type="text" placeholder="Enter city" />
+      <button>
+        <img src="imagenes/search.png" alt="Search" />
+      </button>
+    </div>
+
+    <div class="error">
+      Nombre de ciudad inválido
+    </div>
+
+    <div class="weather">
+      <img src="imagenes/rain.png" class="weather-icon" alt="Weather icon" />
+      <h1 class="temp">23°C</h1>
+      <h2 class="city">Lima</h2>      
+      <div class="details">
+        <div class="humidity">
+          <img src="imagenes/humidity.png" alt="Humidity" />
+          <div>
+            <p class="humidity-value">60%</p>
+            <p>Humedad</p>
+          </div>
+        </div>
+        <div class="wind">
+          <img src="imagenes/wind.png" alt="Wind" />
+          <div>
+            <p class="wind-value">10 km/h</p>
+            <p>Viento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="01-app.js"></script>
+</body>
+</html>
